@@ -52,3 +52,13 @@ main {
 nav {
   z-index: 10;
 }
+
+.grid-control-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.grid-control-wrapper__hidden {
+  display: none;
+}

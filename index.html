@@ -23,12 +23,11 @@
   <body>
     <main>
       <nav>
-        <div class="theme-switch-wrapper">
-          <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
+        <div class="grid-control-wrapper">
+          <label class="grid-toggle" for="checkbox">
+            <input type="checkbox" id="checkbox" onclick="(toggleGrid())" />
           </label>
-          <em>Toggle Dark Mode!</em>
+          <em>Toggle Grid!</em>
         </div>
       </nav>
       <section class="title">
@@ -57,12 +56,19 @@
 
       <!-- DO NOT ALTER BELOW THIS LINE-->
       <section class="grid">
-        <div class="column">Col1</div>
-        <div class="column">Col2</div>
-        <div class="column">Col3</div>
-        <div class="column">Col4</div>
-        <div class="column">Col5</div>
+        <div class="column">1</div>
+        <div class="column">2</div>
+        <div class="column">3</div>
+        <div class="column">4</div>
+        <div class="column">5</div>
       </section>
     </main>
+    <script>
+      const grid = document.querySelector(".grid");
+      const toggleGrid = () => {
+        console.log("Yee");
+        grid.classList.toggle("grid-control-wrapper__hidden");
+      };
+    </script>
   </body>
 </html>
