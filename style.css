@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .posts {
   position: relative;
   display: grid;
@@ -55,10 +59,49 @@ nav {
 
 .grid-control-wrapper {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: calc(100vh - 50px);
+  right: 10px;
 }
 
 .grid-control-wrapper__hidden {
   display: none;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE BREAKPOINTS */
+
+/* @media only screen and (min-width: 1280px) {
+  main {
+    max-width: 1280px;
+  }
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    max-width: 1024px;
+  }
+  .col5 {
+    display: none;
+  }
+  .col4 {
+    margin-right: 0px;
+  }
+  .column {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+  main {
+    max-width: 768px;
+  }
+  .col4,
+  .col5 {
+    display: none;
+  }
+  .col3 {
+    margin-right: 0px;
+  }
+  .column {
+    width: calc(100% / 3);
+  }
 }
