@@ -13,7 +13,7 @@ h5 {
 }
 
 h4 {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .posts {
@@ -35,8 +35,9 @@ h4 {
 }
 
 .quick-post {
-  padding-bottom: 4px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 8px;
 }
 
 .clock svg {
@@ -117,6 +118,7 @@ main {
   left: auto;
   display: flex;
   z-index: -1;
+  pointer-events: none;
 }
 
 nav {
