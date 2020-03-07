@@ -1,6 +1,19 @@
 body {
   margin: 0;
   padding: 0 5vw;
+  font-family: "Gothic A1", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h4 {
+  margin-bottom: 8px;
 }
 
 .posts {
@@ -17,6 +30,40 @@ body {
   height: 300px;
 }
 
+.story {
+  margin-top: 8px;
+}
+
+.quick-post {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.clock svg {
+  width: 0.75em;
+  height: 0.75em;
+  /* vertical-align: top; */
+}
+
+.reading-time {
+  border-right: 1px solid #dbdbdb;
+  padding-right: 4px;
+}
+
+.category {
+  padding-left: 8px;
+}
+
+.reading-time,
+.category {
+  font-size: 0.75em;
+}
+
+.block2 {
+  background-image: url(https://css-tricks.com/wp-content/uploads/2018/12/guide-flexbox.png);
+  background-size: cover;
+}
+
 .title {
   z-index: -3;
   margin-bottom: 16px;
@@ -25,7 +72,7 @@ body {
 article {
   /* width: 100px; */
   height: 100px;
-  background: blue;
+  background: #e5e5e5;
 }
 
 main {
