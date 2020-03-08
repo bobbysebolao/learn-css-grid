@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <main>
+    <nav>
       <svg
         version="1.1"
         id="cssLogo"
@@ -35,15 +35,15 @@
       >
         <path
           d="M541.816,184.201c0,30.971-38.541,29.133-38.541,29.133h-38.54v-55.963h38.54
-       C542.939,157.104,541.816,184.201,541.816,184.201 M464.736,72.022h29.368c30.496,1.611,29.345,24.316,29.345,24.316
-       c0,28.216-33.721,28.676-33.721,28.676h-24.992V72.022z M534.688,136.019c0,0,26.381-11.241,26.146-41.057
-       c0,0,4.012-48.864-60.729-54.824h-71.838v204.849h82.343c0,0,68.803,0.205,68.803-57.799
-       C579.411,187.188,581.038,147.716,534.688,136.019 M348.773,0h302.454v285.013H348.773V0z M193.041,184.201
-       c0,30.971-38.541,29.133-38.541,29.133h-38.543v-55.963H154.5C194.166,157.104,193.041,184.201,193.041,184.201 M115.957,72.022
-       h29.374c30.497,1.611,29.343,24.316,29.343,24.316c0,28.216-33.719,28.676-33.719,28.676h-24.998V72.022z M185.915,136.019
-       c0,0,26.384-11.241,26.147-41.057c0,0,4.009-48.864-60.732-54.824H79.489v204.849h82.349c0,0,68.801,0.205,68.801-57.799
-       C230.639,187.188,232.26,147.716,185.915,136.019 M0,0h302.453v285.013H0V0z M697.547,285.012H1000V0H697.547V285.012z M0,0h302.453
-       v285.013H0V0z M348.773,0h302.454v285.013H348.773V0z"
+           C542.939,157.104,541.816,184.201,541.816,184.201 M464.736,72.022h29.368c30.496,1.611,29.345,24.316,29.345,24.316
+           c0,28.216-33.721,28.676-33.721,28.676h-24.992V72.022z M534.688,136.019c0,0,26.381-11.241,26.146-41.057
+           c0,0,4.012-48.864-60.729-54.824h-71.838v204.849h82.343c0,0,68.803,0.205,68.803-57.799
+           C579.411,187.188,581.038,147.716,534.688,136.019 M348.773,0h302.454v285.013H348.773V0z M193.041,184.201
+           c0,30.971-38.541,29.133-38.541,29.133h-38.543v-55.963H154.5C194.166,157.104,193.041,184.201,193.041,184.201 M115.957,72.022
+           h29.374c30.497,1.611,29.343,24.316,29.343,24.316c0,28.216-33.719,28.676-33.719,28.676h-24.998V72.022z M185.915,136.019
+           c0,0,26.384-11.241,26.147-41.057c0,0,4.009-48.864-60.732-54.824H79.489v204.849h82.349c0,0,68.801,0.205,68.801-57.799
+           C230.639,187.188,232.26,147.716,185.915,136.019 M0,0h302.453v285.013H0V0z M697.547,285.012H1000V0H697.547V285.012z M0,0h302.453
+           v285.013H0V0z M348.773,0h302.454v285.013H348.773V0z"
         />
         <rect
           x="45.836"
@@ -91,24 +91,6 @@
           S
         </text>
       </svg>
-      <nav>
-        <div class="grid-control-wrapper">
-          <label class="grid-toggle" for="checkbox">
-            <input
-              type="checkbox"
-              id="checkbox"
-              onclick="(toggleGrid())"
-              checked
-            />
-          </label>
-          <em>Toggle Column Overlay</em>
-          <br />
-          <label class="grid-toggle" for="checkbox">
-            <input type="checkbox" id="checkbox" onclick="(toggleBorders())" />
-          </label>
-          <em>Toggle Section Borders</em>
-        </div>
-      </nav>
       <section class="title">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -129,20 +111,180 @@
           </g>
         </svg>
       </section>
-      <section class="posts">
-        <article class="post block1">
-          <h2>
-            <a
-              href="https://css-tricks.com/css-grid-replace-flexbox/"
-              target="_blank"
-              >Does CSS Grid Replace Flexbox?</a
+    </nav>
+
+    <!-- ALTER CODE BELOW THIS LINE-->
+    <main class="posts">
+      <article class="post block1">
+        <h2>
+          <a
+            href="https://css-tricks.com/css-grid-replace-flexbox/"
+            target="_blank"
+            >Does CSS Grid Replace Flexbox?</a
+          >
+        </h2>
+        <p class="story">
+          Grid is much newer than Flexbox and has a bit less browser support.
+          That's why it makes perfect sense if people are wondering if CSS grid
+          is here to replace Flexbox.
+        </p>
+        <span class="reading-time">
+          <span class="clock">
+            <svg viewBox="0 0 32 32" focusable="false">
+              <polygon
+                points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+              ></polygon>
+              <path
+                d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+              ></path></svg></span
+          ><span aria-hidden="true" class="qa-status-date-output">16min</span
+          ><span class="gs-u-vh"></span>
+        </span>
+        <span class="category">Intermediate</span>
+      </article>
+      <article class="post block2">
+        <a
+          href="https://css-tricks.com/css-grid-replace-flexbox/"
+          target="_blank"
+          class="story-image-links"
+        ></a>
+      </article>
+      <article class="post block3">
+        <h3>
+          <a href="https://codepen.io/oliviale" target="_blank"
+            >Cool CSS Grid CodePens</a
+          >
+        </h3>
+        <ol>
+          <li>
+            <a href="https://codepen.io/oliviale/pen/moLrBq" target="_blank"
+              >House floor plan</a
             >
-          </h2>
-          <p class="story">
-            Grid is much newer than Flexbox and has a bit less browser support.
-            That's why it makes perfect sense if people are wondering if CSS
-            grid is here to replace Flexbox.
-          </p>
+          </li>
+          <li>
+            <a href="https://codepen.io/tutsplus/pen/pNgZpj" target="_blank"
+              >Web comic</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://codepen.io/jarrodyellets/pen/OQOwZL"
+              target="_blank"
+              >Newspaper layout</a
+            >
+          </li>
+          <li>
+            <a href="https://codepen.io/johnnycopes/pen/yzQyMp" target="_blank"
+              >Monopoly board</a
+            >
+          </li>
+          <li>
+            <a href="https://codepen.io/oliviale/pen/MNJwBM" target="_blank"
+              >Pacman</a
+            >
+          </li>
+          <li>
+            <a href="https://codepen.io/oliviale/pen/NmYvEb" target="_blank"
+              >QR code</a
+            >
+          </li>
+          <li>
+            <a href="https://codepen.io/oliviale/pen/MZZYyO" target="_blank"
+              >Train ticket</a
+            >
+          </li>
+          <li>
+            <a href="https://codepen.io/oliviale/pen/PXGgMG" target="_blank"
+              >A shelf!</a
+            >
+          </li>
+          <li>
+            <a href="https://codepen.io/oliviale/pen/ZmvPPd" target="_blank"
+              >Periodic table</a
+            >
+          </li>
+          <li>
+            <a href="https://codepen.io/oliviale/pen/rPjgmB" target="_blank"
+              >Excel spreadsheet</a
+            >
+          </li>
+        </ol>
+      </article>
+      <article class="post block4">
+        <div class="quick-post">
+          <h4>
+            <a
+              href="https://www.smashingmagazine.com/2018/04/art-directing-web-css-grid/"
+              target="_blank"
+              >Art Directing For The Web With CSS Grid Template Areas</a
+            >
+          </h4>
+          <span class="reading-time">
+            <span class="clock">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <polygon
+                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                ></polygon>
+                <path
+                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                ></path></svg></span
+            ><span aria-hidden="true" class="qa-status-date-output">18min</span
+            ><span class="gs-u-vh"></span>
+          </span>
+          <span class="category">Advanced</span>
+        </div>
+        <div class="quick-post">
+          <h4>
+            <a
+              href="https://www.smashingmagazine.com/2020/01/understanding-css-grid-container/"
+              target="_blank"
+              >Understanding CSS Grid: Creating A Grid Container</a
+            >
+          </h4>
+          <span class="reading-time">
+            <span class="clock">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <polygon
+                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                ></polygon>
+                <path
+                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                ></path></svg></span
+            ><span aria-hidden="true" class="qa-status-date-output">14min</span
+            ><span class="gs-u-vh"></span>
+          </span>
+          <span class="category">Beginner</span>
+        </div>
+        <div class="quick-post">
+          <h4>
+            <a
+              href="https://www.freecodecamp.org/news/how-to-recreate-mediums-article-layout-with-css-grid-b4608792bad1/"
+              target="_blank"
+              >How To Recreate Medium's Article Layout With CSS Grid</a
+            >
+          </h4>
+          <span class="reading-time">
+            <span class="clock">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <polygon
+                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                ></polygon>
+                <path
+                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                ></path></svg></span
+            ><span aria-hidden="true" class="qa-status-date-output">6min</span
+            ><span class="gs-u-vh"></span>
+          </span>
+          <span class="category">Beginner</span>
+        </div>
+        <div class="quick-post">
+          <h4>
+            <a
+              href="https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/"
+              target="_blank"
+              >Best Practices With CSS Grid Layout</a
+            >
+          </h4>
           <span class="reading-time">
             <span class="clock">
               <svg viewBox="0 0 32 32" focusable="false">
@@ -156,408 +298,261 @@
             ><span class="gs-u-vh"></span>
           </span>
           <span class="category">Intermediate</span>
-        </article>
-        <article class="post block2">
+        </div>
+        <div class="quick-post">
+          <h4>
+            <a
+              href="https://css-tricks.com/things-ive-learned-css-grid-layout/"
+              target="_blank"
+              >Things I've Learned About CSS Grid Layout</a
+            >
+          </h4>
+          <span class="reading-time">
+            <span class="clock">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <polygon
+                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                ></polygon>
+                <path
+                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                ></path></svg></span
+            ><span aria-hidden="true" class="qa-status-date-output">15min</span
+            ><span class="gs-u-vh"></span>
+          </span>
+          <span class="category">Intermediate</span>
+        </div>
+        <div class="quick-post">
+          <h4>
+            <a href="https://gridbyexample.com/examples/" target="_blank"
+              >Usage Examples Of CSS Grid Layout</a
+            >
+          </h4>
+          <span class="reading-time">
+            <span class="clock">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <polygon
+                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                ></polygon>
+                <path
+                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                ></path></svg></span
+            ><span aria-hidden="true" class="qa-status-date-output">5min</span
+            ><span class="gs-u-vh"></span>
+          </span>
+          <span class="category">Intermediate</span>
+        </div>
+        <div class="quick-post">
+          <h4>
+            <a
+              href="https://www.sitepoint.com/master-modern-css-projects/"
+              target="_blank"
+              >Building A Trello Layout With CSS Grid And Flexbox</a
+            >
+          </h4>
+          <span class="reading-time">
+            <span class="clock">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <polygon
+                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                ></polygon>
+                <path
+                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                ></path></svg></span
+            ><span aria-hidden="true" class="qa-status-date-output">5min</span
+            ><span class="gs-u-vh"></span>
+          </span>
+          <span class="category">Intermediate</span>
+        </div>
+        <div class="quick-post">
+          <h4>
+            <a
+              href="https://www.smashingmagazine.com/2017/09/css-grid-gotchas-stumbling-blocks/"
+              target="_blank"
+              >CSS Grid Gotchas And Stumbling Blocks</a
+            >
+          </h4>
+          <span class="reading-time">
+            <span class="clock">
+              <svg viewBox="0 0 32 32" focusable="false">
+                <polygon
+                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+                ></polygon>
+                <path
+                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+                ></path></svg></span
+            ><span aria-hidden="true" class="qa-status-date-output">14min</span
+            ><span class="gs-u-vh"></span>
+          </span>
+          <span class="category">Advanced</span>
+        </div>
+      </article>
+      <article class="post block5">
+        <div class="story-image img1">
           <a
-            href="https://css-tricks.com/css-grid-replace-flexbox/"
+            href="https://chrome.google.com/webstore/detail/design-grid-overlay/kmaadknbpdklpcommafmcboghdlopmbi?hl=en"
             target="_blank"
             class="story-image-links"
           ></a>
-        </article>
-        <article class="post block3">
-          <h3>
-            <a href="https://codepen.io/oliviale" target="_blank"
-              >Cool CSS Grid CodePens</a
-            >
-          </h3>
-          <ol>
-            <li>
-              <a href="https://codepen.io/oliviale/pen/moLrBq" target="_blank"
-                >House floor plan</a
-              >
-            </li>
-            <li>
-              <a href="https://codepen.io/tutsplus/pen/pNgZpj" target="_blank"
-                >Web comic</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://codepen.io/jarrodyellets/pen/OQOwZL"
-                target="_blank"
-                >Newspaper layout</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://codepen.io/johnnycopes/pen/yzQyMp"
-                target="_blank"
-                >Monopoly board</a
-              >
-            </li>
-            <li>
-              <a href="https://codepen.io/oliviale/pen/MNJwBM" target="_blank"
-                >Pacman</a
-              >
-            </li>
-            <li>
-              <a href="https://codepen.io/oliviale/pen/NmYvEb" target="_blank"
-                >QR code</a
-              >
-            </li>
-            <li>
-              <a href="https://codepen.io/oliviale/pen/MZZYyO" target="_blank"
-                >Train ticket</a
-              >
-            </li>
-            <li>
-              <a href="https://codepen.io/oliviale/pen/PXGgMG" target="_blank"
-                >A shelf!</a
-              >
-            </li>
-            <li>
-              <a href="https://codepen.io/oliviale/pen/ZmvPPd" target="_blank"
-                >Periodic table</a
-              >
-            </li>
-            <li>
-              <a href="https://codepen.io/oliviale/pen/rPjgmB" target="_blank"
-                >Excel spreadsheet</a
-              >
-            </li>
-          </ol>
-        </article>
-        <article class="post block4">
-          <div class="quick-post">
-            <h4>
-              <a
-                href="https://www.smashingmagazine.com/2018/04/art-directing-web-css-grid/"
-                target="_blank"
-                >Art Directing For The Web With CSS Grid Template Areas</a
-              >
-            </h4>
-            <span class="reading-time">
-              <span class="clock">
-                <svg viewBox="0 0 32 32" focusable="false">
-                  <polygon
-                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                  ></polygon>
-                  <path
-                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                  ></path></svg></span
-              ><span aria-hidden="true" class="qa-status-date-output"
-                >18min</span
-              ><span class="gs-u-vh"></span>
-            </span>
-            <span class="category">Advanced</span>
-          </div>
-          <div class="quick-post">
-            <h4>
-              <a
-                href="https://www.smashingmagazine.com/2020/01/understanding-css-grid-container/"
-                target="_blank"
-                >Understanding CSS Grid: Creating A Grid Container</a
-              >
-            </h4>
-            <span class="reading-time">
-              <span class="clock">
-                <svg viewBox="0 0 32 32" focusable="false">
-                  <polygon
-                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                  ></polygon>
-                  <path
-                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                  ></path></svg></span
-              ><span aria-hidden="true" class="qa-status-date-output"
-                >14min</span
-              ><span class="gs-u-vh"></span>
-            </span>
-            <span class="category">Beginner</span>
-          </div>
-          <div class="quick-post">
-            <h4>
-              <a
-                href="https://www.freecodecamp.org/news/how-to-recreate-mediums-article-layout-with-css-grid-b4608792bad1/"
-                target="_blank"
-                >How To Recreate Medium's Article Layout With CSS Grid</a
-              >
-            </h4>
-            <span class="reading-time">
-              <span class="clock">
-                <svg viewBox="0 0 32 32" focusable="false">
-                  <polygon
-                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                  ></polygon>
-                  <path
-                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                  ></path></svg></span
-              ><span aria-hidden="true" class="qa-status-date-output">6min</span
-              ><span class="gs-u-vh"></span>
-            </span>
-            <span class="category">Beginner</span>
-          </div>
-          <div class="quick-post">
-            <h4>
-              <a
-                href="https://www.smashingmagazine.com/2018/04/best-practices-grid-layout/"
-                target="_blank"
-                >Best Practices With CSS Grid Layout</a
-              >
-            </h4>
-            <span class="reading-time">
-              <span class="clock">
-                <svg viewBox="0 0 32 32" focusable="false">
-                  <polygon
-                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                  ></polygon>
-                  <path
-                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                  ></path></svg></span
-              ><span aria-hidden="true" class="qa-status-date-output"
-                >16min</span
-              ><span class="gs-u-vh"></span>
-            </span>
-            <span class="category">Intermediate</span>
-          </div>
-          <div class="quick-post">
-            <h4>
-              <a
-                href="https://css-tricks.com/things-ive-learned-css-grid-layout/"
-                target="_blank"
-                >Things I've Learned About CSS Grid Layout</a
-              >
-            </h4>
-            <span class="reading-time">
-              <span class="clock">
-                <svg viewBox="0 0 32 32" focusable="false">
-                  <polygon
-                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                  ></polygon>
-                  <path
-                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                  ></path></svg></span
-              ><span aria-hidden="true" class="qa-status-date-output"
-                >15min</span
-              ><span class="gs-u-vh"></span>
-            </span>
-            <span class="category">Intermediate</span>
-          </div>
-          <div class="quick-post">
-            <h4>
-              <a href="https://gridbyexample.com/examples/" target="_blank"
-                >Usage Examples Of CSS Grid Layout</a
-              >
-            </h4>
-            <span class="reading-time">
-              <span class="clock">
-                <svg viewBox="0 0 32 32" focusable="false">
-                  <polygon
-                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                  ></polygon>
-                  <path
-                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                  ></path></svg></span
-              ><span aria-hidden="true" class="qa-status-date-output">5min</span
-              ><span class="gs-u-vh"></span>
-            </span>
-            <span class="category">Intermediate</span>
-          </div>
-          <div class="quick-post">
-            <h4>
-              <a
-                href="https://www.sitepoint.com/master-modern-css-projects/"
-                target="_blank"
-                >Building A Trello Layout With CSS Grid And Flexbox</a
-              >
-            </h4>
-            <span class="reading-time">
-              <span class="clock">
-                <svg viewBox="0 0 32 32" focusable="false">
-                  <polygon
-                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                  ></polygon>
-                  <path
-                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                  ></path></svg></span
-              ><span aria-hidden="true" class="qa-status-date-output">5min</span
-              ><span class="gs-u-vh"></span>
-            </span>
-            <span class="category">Intermediate</span>
-          </div>
-          <div class="quick-post">
-            <h4>
-              <a
-                href="https://www.smashingmagazine.com/2017/09/css-grid-gotchas-stumbling-blocks/"
-                target="_blank"
-                >CSS Grid Gotchas And Stumbling Blocks</a
-              >
-            </h4>
-            <span class="reading-time">
-              <span class="clock">
-                <svg viewBox="0 0 32 32" focusable="false">
-                  <polygon
-                    points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                  ></polygon>
-                  <path
-                    d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                  ></path></svg></span
-              ><span aria-hidden="true" class="qa-status-date-output"
-                >14min</span
-              ><span class="gs-u-vh"></span>
-            </span>
-            <span class="category">Advanced</span>
-          </div>
-        </article>
-        <article class="post block5">
-          <div class="story-image img1">
-            <a
-              href="https://chrome.google.com/webstore/detail/design-grid-overlay/kmaadknbpdklpcommafmcboghdlopmbi?hl=en"
-              target="_blank"
-              class="story-image-links"
-            ></a>
-          </div>
-          <h4 class="secondary-story-title">
-            <a
-              href="https://chrome.google.com/webstore/detail/design-grid-overlay/kmaadknbpdklpcommafmcboghdlopmbi?hl=en"
-              target="_blank"
-              >Design Grid Overlay</a
-            >
-          </h4>
-          <p>
-            A Chrome extension for displaying grid overlays on web pages.
-          </p>
-          <span class="reading-time">
-            <span class="clock">
-              <svg viewBox="0 0 32 32" focusable="false">
-                <polygon
-                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                ></polygon>
-                <path
-                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                ></path></svg></span
-            ><span aria-hidden="true" class="qa-status-date-output">1min</span
-            ><span class="gs-u-vh"></span>
-          </span>
-          <span class="category">Beginner</span>
-        </article>
-        <article class="post block6">
-          <div class="story-image img2">
-            <a
-              href="https://github.com/AllThingsSmitty/css-protips#readme"
-              target="_blank"
-              class="story-image-links"
-            ></a>
-          </div>
-          <h4 class="secondary-story-title">
-            <a
-              href="https://github.com/AllThingsSmitty/css-protips#readme"
-              target="_blank"
-              >CSS Protips Github Repo</a
-            >
-          </h4>
-          <p>
-            A collection of tips to help take your CSS skills to the next level.
-            Star this repo!
-          </p>
-          <span class="reading-time">
-            <span class="clock">
-              <svg viewBox="0 0 32 32" focusable="false">
-                <polygon
-                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                ></polygon>
-                <path
-                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                ></path></svg></span
-            ><span aria-hidden="true" class="qa-status-date-output">1min</span
-            ><span class="gs-u-vh"></span>
-          </span>
-          <span class="category">Beginner</span>
-        </article>
-        <article class="post block7">
-          <div class="story-image img3">
-            <a
-              href="https://github.com/awesome-css-group/awesome-css#twitter-satellite"
-              target="_blank"
-              class="story-image-links"
-            ></a>
-          </div>
-          <h4 class="secondary-story-title">
-            <a
-              href="https://github.com/awesome-css-group/awesome-css#twitter-satellite"
-              target="_blank"
-              >CSS Community On Twitter</a
-            >
-          </h4>
-          <p>
-            A list of people on Twitter who are active in the CSS community.
-          </p>
-          <span class="reading-time">
-            <span class="clock">
-              <svg viewBox="0 0 32 32" focusable="false">
-                <polygon
-                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                ></polygon>
-                <path
-                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                ></path></svg></span
-            ><span aria-hidden="true" class="qa-status-date-output">1min</span
-            ><span class="gs-u-vh"></span>
-          </span>
-          <span class="category">Beginner</span>
-        </article>
-        <article class="post block8">
-          <div class="story-image img4">
-            <a
-              href="https://cssgridgarden.com/"
-              target="_blank"
-              class="story-image-links"
-            ></a>
-          </div>
-          <h4 class="secondary-story-title">
-            <a href="https://cssgridgarden.com/" target="_blank"
-              >Play CSS Grid Garden</a
-            >
-          </h4>
-          <p>
-            A fun game where you create CSS Grid layouts to grow your carrot
-            garden.
-          </p>
-          <span class="reading-time">
-            <span class="clock">
-              <svg viewBox="0 0 32 32" focusable="false">
-                <polygon
-                  points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
-                ></polygon>
-                <path
-                  d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
-                ></path></svg></span
-            ><span aria-hidden="true" class="qa-status-date-output">1min</span
-            ><span class="gs-u-vh"></span>
-          </span>
-          <span class="category">Beginner</span>
-        </article>
-      </section>
-      <footer>
-        <em>
-          Inspired by the
-          <a href="https://www.bbc.co.uk/news" target="_blank" class="credit"
-            >BBC News homepage</a
+        </div>
+        <h4 class="secondary-story-title">
+          <a
+            href="https://chrome.google.com/webstore/detail/design-grid-overlay/kmaadknbpdklpcommafmcboghdlopmbi?hl=en"
+            target="_blank"
+            >Design Grid Overlay</a
           >
-        </em>
-      </footer>
-
-      <!-- DO NOT ALTER BELOW THIS LINE-->
-      <section class="grid">
-        <div class="column col1">1</div>
-        <div class="column col2">2</div>
-        <div class="column col3">3</div>
-        <div class="column col4">4</div>
-        <div class="column col5">5</div>
-      </section>
+        </h4>
+        <p>
+          A Chrome extension for displaying grid overlays on web pages.
+        </p>
+        <span class="reading-time">
+          <span class="clock">
+            <svg viewBox="0 0 32 32" focusable="false">
+              <polygon
+                points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+              ></polygon>
+              <path
+                d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+              ></path></svg></span
+          ><span aria-hidden="true" class="qa-status-date-output">1min</span
+          ><span class="gs-u-vh"></span>
+        </span>
+        <span class="category">Beginner</span>
+      </article>
+      <article class="post block6">
+        <div class="story-image img2">
+          <a
+            href="https://github.com/AllThingsSmitty/css-protips#readme"
+            target="_blank"
+            class="story-image-links"
+          ></a>
+        </div>
+        <h4 class="secondary-story-title">
+          <a
+            href="https://github.com/AllThingsSmitty/css-protips#readme"
+            target="_blank"
+            >CSS Protips Github Repo</a
+          >
+        </h4>
+        <p>
+          A collection of tips to help take your CSS skills to the next level.
+          Star this repo!
+        </p>
+        <span class="reading-time">
+          <span class="clock">
+            <svg viewBox="0 0 32 32" focusable="false">
+              <polygon
+                points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+              ></polygon>
+              <path
+                d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+              ></path></svg></span
+          ><span aria-hidden="true" class="qa-status-date-output">1min</span
+          ><span class="gs-u-vh"></span>
+        </span>
+        <span class="category">Beginner</span>
+      </article>
+      <article class="post block7">
+        <div class="story-image img3">
+          <a
+            href="https://github.com/awesome-css-group/awesome-css#twitter-satellite"
+            target="_blank"
+            class="story-image-links"
+          ></a>
+        </div>
+        <h4 class="secondary-story-title">
+          <a
+            href="https://github.com/awesome-css-group/awesome-css#twitter-satellite"
+            target="_blank"
+            >CSS Community On Twitter</a
+          >
+        </h4>
+        <p>
+          A list of people on Twitter who are active in the CSS community.
+        </p>
+        <span class="reading-time">
+          <span class="clock">
+            <svg viewBox="0 0 32 32" focusable="false">
+              <polygon
+                points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+              ></polygon>
+              <path
+                d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+              ></path></svg></span
+          ><span aria-hidden="true" class="qa-status-date-output">1min</span
+          ><span class="gs-u-vh"></span>
+        </span>
+        <span class="category">Beginner</span>
+      </article>
+      <article class="post block8">
+        <div class="story-image img4">
+          <a
+            href="https://cssgridgarden.com/"
+            target="_blank"
+            class="story-image-links"
+          ></a>
+        </div>
+        <h4 class="secondary-story-title">
+          <a href="https://cssgridgarden.com/" target="_blank"
+            >Play CSS Grid Garden</a
+          >
+        </h4>
+        <p>
+          A fun game where you create CSS Grid layouts to grow your carrot
+          garden.
+        </p>
+        <span class="reading-time">
+          <span class="clock">
+            <svg viewBox="0 0 32 32" focusable="false">
+              <polygon
+                points="17,15.4 17,6 15,6 15,16.6 23.8,21.7 24.8,19.9"
+              ></polygon>
+              <path
+                d="M16,4c6.6,0,12,5.4,12,12c0,6.6-5.4,12-12,12S4,22.6,4,16C4,9.4,9.4,4,16,4 M16,0C7.2,0,0,7.2,0,16c0,8.8,7.2,16,16,16 s16-7.2,16-16C32,7.2,24.8,0,16,0L16,0z"
+              ></path></svg></span
+          ><span aria-hidden="true" class="qa-status-date-output">1min</span
+          ><span class="gs-u-vh"></span>
+        </span>
+        <span class="category">Beginner</span>
+      </article>
     </main>
+
+    <!-- DO NOT ALTER CODE BELOW THIS LINE-->
+    <section class="grid">
+      <div class="column col1">1</div>
+      <div class="column col2">2</div>
+      <div class="column col3">3</div>
+      <div class="column col4">4</div>
+      <div class="column col5">5</div>
+    </section>
+
+    <section class="grid-control-wrapper">
+      <label class="grid-toggle" for="checkbox">
+        <input type="checkbox" id="checkbox" onclick="(toggleGrid())" checked />
+      </label>
+      <em>Toggle Column Overlay</em>
+      <br />
+      <label class="grid-toggle" for="checkbox">
+        <input type="checkbox" id="checkbox" onclick="(toggleBorders())" />
+      </label>
+      <em>Toggle Section Borders</em>
+    </section>
+
+    <footer>
+      <em>
+        Inspired by the
+        <a href="https://www.bbc.co.uk/news" target="_blank" class="credit"
+          >BBC News homepage</a
+        >
+      </em>
+    </footer>
     <script>
       const grid = document.querySelector(".grid");
+      const posts = document.querySelector(".posts");
       const sections = document.querySelectorAll(".post");
+
+      grid.style.width = posts.clientWidth + "px";
+      grid.style.left = `calc(50% - (${grid.style.width}/2))`;
+
       const toggleGrid = () =>
         grid.classList.toggle("grid-control-wrapper__hidden");
       const toggleBorders = () => {
@@ -566,6 +561,14 @@
           sections[i].classList.toggle("post-borders");
         }
       };
+      //Code to keep the width of the grid overlay columns
+      //in sync with the content of <main>
+      const resizeGrid = () => {
+        grid.style.width = posts.clientWidth + "px";
+        grid.style.left = `calc(50% - (${grid.style.width}/2))`;
+      };
+
+      window.onresize = resizeGrid;
     </script>
   </body>
 </html>
