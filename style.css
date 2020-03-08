@@ -12,6 +12,10 @@ h5 {
   margin: 0;
 }
 
+/* h1 {
+  padding-top: 16px;
+} */
+
 h4 {
   margin-bottom: 4px;
 }
@@ -97,6 +101,12 @@ h4 {
 }
 
 .title {
+  margin-left: -5vw;
+  padding-left: 5vw;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100vw;
+  background: #bc312a;
   z-index: -3;
   margin-bottom: 16px;
 }
@@ -104,13 +114,13 @@ h4 {
 article {
   /* width: 100px; */
   height: 100px;
-  background: #e5e5e5;
+  /* background: #e5e5e5; */
 }
 
 main {
   position: relative;
   margin: 0 auto;
-  background: yellow;
+  /* background: yellow; */
   max-width: 1280px;
   z-index: 0;
 }
@@ -125,14 +135,19 @@ main {
   grid-row: span 2;
 }
 
-/* @media only screen and (min-width: 80em) {
-  main {
-    max-width: 1280px;
-  }
-} */
+.grid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: auto;
+  display: flex;
+  z-index: 1;
+  pointer-events: none;
+}
 
 .column {
-  height: 100vh;
+  height: 100%;
   width: 20%;
   background: rgba(129, 41, 56, 0.5);
   margin-right: 16px;
@@ -142,24 +157,19 @@ main {
   margin-right: 0px;
 }
 
-.grid {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: auto;
-  display: flex;
-  z-index: -1;
-  pointer-events: none;
-}
-
 nav {
   z-index: 10;
 }
 
 .grid-control-wrapper {
-  position: absolute;
+  position: fixed;
   top: calc(100vh - 50px);
-  right: 10px;
+  right: 50px;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 2;
 }
 
 .grid-control-wrapper__hidden {
