@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0 5vw;
   font-family: "Gothic A1", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -12,12 +13,36 @@ h5 {
   margin: 0;
 }
 
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #3780a1;
+  color: #3780a1;
+}
+
 /* h1 {
   padding-top: 16px;
 } */
 
 h4 {
   margin-bottom: 4px;
+}
+
+footer {
+  /* height: 60px; */
+  width: 100vw;
+  margin-left: -5vw;
+  padding-left: 5vw;
+  background: #4c4c4c;
+  color: #ffffff;
+  /* text-decoration-color: #ffffff; */
+  padding-top: 80px;
+  padding-bottom: 16px;
+  border-top: 1px solid #949494;
 }
 
 .posts {
@@ -30,9 +55,14 @@ h4 {
 }
 
 .post {
-  border-radius: 5px;
+  /* border-radius: 5px; */
   height: auto;
   overflow: hidden;
+  box-sizing: initial;
+}
+
+.post-borders {
+  border: 1px dashed black;
 }
 
 .story {
@@ -72,11 +102,13 @@ h4 {
 
 .quick-post:last-of-type {
   margin-bottom: 0px;
+  border-bottom: none;
 }
 
 .clock svg {
   width: 0.75em;
   height: 0.75em;
+  margin-right: 4px;
 }
 
 #cssLogo {
@@ -110,6 +142,7 @@ h4 {
   padding-top: 16px;
   padding-bottom: 16px;
   width: 100vw;
+  min-height: 56px;
   background: #bc312a;
   color: #ffffff;
   z-index: -3;

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>CSS Grid Challenge</title>
+    <title>CSS Grid Design Challenge</title>
 
     <link rel="stylesheet" media="screen" href="style.css" />
     <link
@@ -102,6 +102,10 @@
             />
           </label>
           <em>Toggle Grid Columns</em>
+          <label class="grid-toggle" for="checkbox">
+            <input type="checkbox" id="checkbox" onclick="(toggleBorders())" />
+          </label>
+          <em>Toggle Section Borders</em>
         </div>
       </nav>
       <section class="title">
@@ -123,13 +127,6 @@
             ></image>
           </g>
         </svg>
-        <!-- <h1>CSS News</h1> -->
-        <em>
-          Inspired by the
-          <a href="https://www.bbc.co.uk/news" target="_blank"
-            >BBC News homepage</a
-          >
-        </em>
       </section>
       <section class="posts">
         <article class="post block1">
@@ -457,8 +454,7 @@
             >
           </h4>
           <p>
-            A regularly updated list of people on Twitter who are active in the
-            CSS community.
+            A list of people on Twitter who are active in the CSS community.
           </p>
           <span class="reading-time">
             <span class="clock">
@@ -482,8 +478,8 @@
             >
           </h4>
           <p>
-            A fun game where you where you create CSS Grid layouts to grow your
-            carrot garden.
+            A fun game where you create CSS Grid layouts to grow your carrot
+            garden.
           </p>
           <span class="reading-time">
             <span class="clock">
@@ -500,6 +496,14 @@
           <span class="category">Beginner</span>
         </article>
       </section>
+      <footer>
+        <em>
+          Inspired by the
+          <a href="https://www.bbc.co.uk/news" target="_blank"
+            >BBC News homepage</a
+          >
+        </em>
+      </footer>
 
       <!-- DO NOT ALTER BELOW THIS LINE-->
       <section class="grid">
@@ -512,8 +516,15 @@
     </main>
     <script>
       const grid = document.querySelector(".grid");
+      const sections = document.querySelectorAll(".post");
       const toggleGrid = () =>
         grid.classList.toggle("grid-control-wrapper__hidden");
+      const toggleBorders = () => {
+        console.log("Hey");
+        for (let i = 0; i < sections.length; i++) {
+          sections[i].classList.toggle("post-borders");
+        }
+      };
     </script>
   </body>
 </html>
