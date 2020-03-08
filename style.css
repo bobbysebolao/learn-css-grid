@@ -20,24 +20,54 @@ h4 {
   position: relative;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: 300px auto;
   grid-gap: 16px;
   z-index: -2;
 }
 
 .post {
   border-radius: 5px;
-  height: 300px;
+  height: auto;
+  overflow: hidden;
 }
 
 .story {
   margin-top: 8px;
 }
 
+.story-image {
+  width: 100%;
+  height: 50%;
+  background: #e5e5e5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.img1 {
+  background-image: url(https://lh3.googleusercontent.com/Linx0BQZt67O9rehDQI9EBbQdbTIntr1S0Qu5Z_0nAMeYiEccX_bHJZk29_cluelMWz110ScZw=w128-h128-e365);
+}
+
+.img2 {
+  background-image: url(https://camo.githubusercontent.com/9b290de6835cf807aaa81bb6a7cfdf3835636f8c/68747470733a2f2f7261776769742e636f6d2f416c6c5468696e6773536d697474792f6373732d70726f746970732f6d61737465722f6d656469612f6c6f676f2e737667);
+}
+
+.img3 {
+  background-image: url(https://1000logos.net/wp-content/uploads/2017/06/Twitter-Logo.png);
+}
+
+.img4 {
+  background-image: url(https://cdn3.iconfinder.com/data/icons/spring-23/32/carrot-vegetable-spring-food-512.png);
+}
+
 .quick-post {
   padding-bottom: 8px;
   border-bottom: 1px solid #dbdbdb;
   margin-bottom: 8px;
+}
+
+.quick-post:last-of-type {
+  margin-bottom: 0px;
 }
 
 .clock svg {
@@ -63,6 +93,7 @@ h4 {
 .block2 {
   background-image: url(https://css-tricks.com/wp-content/uploads/2018/12/guide-flexbox.png);
   background-size: cover;
+  /* height: 300px; */
 }
 
 .title {
