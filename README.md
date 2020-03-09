@@ -8,7 +8,7 @@ The aim of this challenge is to learn how to use CSS Grid to recreate the layout
 
 When we're done, our web page will look like this:
 
-![A screenshot of our fictional CSS News home page](https://i.imgur.com/1c5Gjux.png)
+![A screenshot of our fictional CSS News home page](https://i.imgur.com/OUKeGvt.png)
 
 ## Getting Started
 
