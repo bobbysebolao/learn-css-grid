@@ -1,0 +1,41 @@
+/* STRETCH GOAL */
+/* 4-col and 3-col layouts for different screen sizes. */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .posts {
+    max-width: 1024px;
+    grid-template-areas:
+      "main-story main-story-img main-story-img main-story-img"
+      "sub-story1 sub-story2 sub-story3 sub-story4";
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .posts__two {
+    grid-column: span 3;
+  }
+
+  .posts__three,
+  .posts__four {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .posts {
+    max-width: 768px;
+    grid-template-areas:
+      "main-story main-story-img main-story-img"
+      "sub-story1 sub-story2 sub-story3";
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .posts__two {
+    grid-column: span 2;
+  }
+
+  .posts__three,
+  .posts__four,
+  .posts__eight {
+    display: none;
+  }
+}
