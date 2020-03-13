@@ -21,18 +21,11 @@
   grid-row: 1 / 3; /* will span first 2 rows */
 }
 
-.posts__one,
-.posts__two,
-.posts__three,
-.posts__four,
-.posts__five,
-.posts__six,
-.posts__seven,
-.posts__eight {
+/* DO NOT ALTER BELOW THIS LINE */
+
+* {
   box-sizing: border-box;
 }
-
-/* DO NOT ALTER BELOW THIS LINE */
 
 body {
   margin: 0;

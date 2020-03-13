@@ -7,23 +7,15 @@
 /* add/edit your style declarations here */
 
 .posts__two {
-  grid-area: main-story-img;
   background-image: url(https://css-tricks.com/wp-content/uploads/2018/12/guide-flexbox.png);
   background-size: cover;
 }
 
-.posts__one,
-.posts__two,
-.posts__three,
-.posts__four,
-.posts__five,
-.posts__six,
-.posts__seven,
-.posts__eight {
+/* DO NOT ALTER BELOW THIS LINE */
+
+* {
   box-sizing: border-box;
 }
-
-/* DO NOT ALTER BELOW THIS LINE */
 
 body {
   margin: 0;
