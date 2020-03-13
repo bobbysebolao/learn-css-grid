@@ -5,46 +5,20 @@
 /* ALTER BELOW THIS LINE */
 .posts {
   display: grid;
-  grid-template-areas:
-    "main-story main-story-img main-story-img codepens list"
-    "sub-story1 sub-story2 sub-story3 sub-story4 list";
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 300px auto;
   grid-gap: 1rem;
 }
 
-.posts__one {
-  grid-area: main-story;
-}
-
 .posts__two {
-  grid-area: main-story-img;
+  grid-column: span 2; /* will span two columns */
   background-image: url(https://css-tricks.com/wp-content/uploads/2018/12/guide-flexbox.png);
   background-size: cover;
 }
 
-.posts__three {
-  grid-area: codepens;
-}
-
 .posts__four {
-  grid-area: list;
-}
-
-.posts__five {
-  grid-area: sub-story1;
-}
-
-.posts__six {
-  grid-area: sub-story2;
-}
-
-.posts__seven {
-  grid-area: sub-story3;
-}
-
-.posts__eight {
-  grid-area: sub-story4;
+  grid-column: -2 / -1; /* will span from 2nd last to last column */
+  grid-row: 1 / 3; /* will span first 2 rows */
 }
 
 .posts__one,

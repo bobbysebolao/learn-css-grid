@@ -4,10 +4,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .posts {
     max-width: 1024px;
-    grid-template-areas:
-      "main-story main-story-img main-story-img main-story-img"
-      "sub-story1 sub-story2 sub-story3 sub-story4";
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* creates 4 column layout */
   }
 
   .posts__two {
@@ -23,10 +20,7 @@
 @media only screen and (max-width: 768px) {
   .posts {
     max-width: 768px;
-    grid-template-areas:
-      "main-story main-story-img main-story-img"
-      "sub-story1 sub-story2 sub-story3";
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* creates 3 column layout */
   }
 
   .posts__two {
