@@ -37,5 +37,5 @@ Write the CSS for this part inside `responsive.css`.
 <details>
 <summary>Hint
 </summary>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank">Media queries</a> will come in handy. You may also want to look into the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas" target="_blank">grid-template-areas</a> property.
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank">Media queries</a> will come in handy.
 </details>
